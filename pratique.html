@@ -1,0 +1,70 @@
+<!--PAGE PRATIQUE DU SITE
+COMMENCER LE 19 NOVEMBRE 2015
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="nicolas,stael,exposition,artiste,peinture">
+  <meta name="author" content="Dylan Schirino">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>EXPO DE STA&Euml;L</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+
+      <div class="topbar">
+        <h1 role="heading" aria-level="1">
+          <a href="index.html">Nicolas De Sta&euml;l</a>
+        </h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="bibliographie.html">Bibliographie</a></li>
+            <li id="active"><a href="pratique.html">Pratique</a></li>
+            <li><a href="lien.html">Liens</a></li>
+          </ul>
+        </nav><!--/menu-->
+      </div><!--/topbar-->
+    </header>
+    <main>
+      <section id="Information">
+        <h2>Exposition Nicolas de Sta&euml;l</h2>
+        <ul>
+          <li>Palais des Beaux-Arts de Houtesiplou</li>
+          <li>Du 20 novembre 2005 au 18 mars 2006</li>
+          <li>Ouvert tous les jours de 10 à 18 heures sauf le lundi</li>
+          <li>Entrée&nbsp;:&nbsp;Adultes 4€&nbsp;-&nbsp;Enfants 2€</li>
+          <li>Téléphone&nbsp;:&nbsp;<a href="tel:+3247676767">+3247676767</a></li>
+        </ul>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Formulaire de demande de catalogue</legend>
+            <div class="form">
+              <label for="nom">Nom&nbsp;:&nbsp;</label>
+              <input type="text" id="nom" name="name" placeholder="Dupont"/>
+              <label for="prenom">Prénom&nbsp;:&nbsp;</label>
+              <input type="text" id="prenom" name="surname" placeholder="Jean"/>
+              <label for="rue">Rue&nbsp;:&nbsp;</label>
+              <input type="text" id="rue" name="Rue" placeholder="Rue de la rue"/>
+              <label for="num">Numéro&nbsp;:&nbsp;</label>
+              <input type="number" id="num" name="numero" placeholder="5"/>
+              <label for="cp">Code Postal&nbsp;:&nbsp;</label>
+              <input type="number" id="cp" name="codepostal" placeholder="4030"/>
+              <button type="submit">Commander ! </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </div><!--/wrapper-->
+  </body>
+  </html>

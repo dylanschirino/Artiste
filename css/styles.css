@@ -1,0 +1,367 @@
+/*MAIN STYLESHEET COMMENCER LE 22 NOVEMBRE 2015*/
+/******IMPORTATION DES POLICES***********/
+@font-face {
+  font-family: 'bebas-bold';
+  src: url('../fonts/bebas/bebasbeue-bold-webfont.eot');
+  src: url('../fonts/bebas/bebasbeue-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebas/bebasbeue-bold-webfont.woff2') format('woff2'),
+  url('../fonts/bebas/bebasbeue-bold-webfont.woff') format('woff'),
+  url('../fonts/bebas/bebasbeue-bold-webfont.ttf') format('truetype'),
+  url('../fonts/bebas/bebasbeue-bold-webfont.svg#bebas_neuebold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url('../fonts/ubuntu/ubuntu-r-webfont.eot');
+  src: url('../fonts/ubuntu/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.woff2') format('woff2'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.woff') format('woff'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.ttf') format('truetype'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.svg#ubunturegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'opensans';
+  src: url('../fonts/open-sans/opensans-webfont.eot');
+  src: url('../fonts/open-sans/opensans-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/open-sans/opensans-webfont.woff2') format('woff2'),
+  url('../fonts/open-sans/opensans-webfont.woff') format('woff'),
+  url('../fonts/open-sans/opensans-webfont.ttf') format('truetype'),
+  url('../fonts/open-sans/opensans-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'glyphs';
+  src:url('../fonts/fontawesome/icomoon.eot?a0vwcp');
+  src:url('../fonts/fontawesome/icomoon.eot?a0vwcp#iefix') format('embedded-opentype'),
+  url('../fonts/fontawesome/icomoon.ttf?a0vwcp') format('truetype'),
+  url('../fonts/fontawesome/icomoon.woff?a0vwcp') format('woff'),
+  url('../fonts/fontawesome/icomoon.svg?a0vwcp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/********** BASE *************/
+html {
+  font: normal 62.5%/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url("../img/background.png")repeat;
+}
+a{
+  text-decoration: none;
+  color:#606060;
+}
+
+nav h2,.piedpage h3{
+  display: none;
+}
+h2{
+  font:6em "bebas-bold";
+  text-shadow: 5px 5px 8px black;
+  color:#cccece;
+  text-align: center;
+}
+h3{
+  font:3em "bebas-bold";
+  text-transform: uppercase;
+  text-align: center;
+  color:#2190c1;
+  margin-bottom:1em;
+}
+/*************MENU DE NAVIGATION**************/
+.topbar{
+  text-align:right;
+}
+.menu ul{
+  position:relative;
+  background-color: #323A45;
+}
+/******LOGO DE Nicolas DeStael*******/
+.topbar h1{
+  position:absolute;
+  margin-left: 20px;
+  font-size: 0;
+  z-index: 1;
+}
+.topbar h1 a {
+  width:200px;
+  height:70px;
+  display: block;
+  background:url("../img/logo.png") no-repeat center center;
+  background-size: contain;
+
+}
+/*****Liens du menu*****/
+.menu li{
+  display:inline-block;
+  color:white;
+}
+#active{
+  color:white;
+}
+#active::after{
+  bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.menu #active a {
+  color:white;
+}
+.menu a{
+  margin:20px 31px 20px 18px;
+  display: block;
+  font: 1.5em "ubuntu";
+  transition: .4s ease-in-out;
+  position:relative;
+  padding:10px;
+  color:white;
+
+}
+.menu a:hover{
+  color:white;
+  border-bottom: inset 2px white;
+}
+/******** FIN MENU DE NAVIGATION******/
+/*********TEXTE SUR LES SLIDERS************/
+.principal{
+  background: url("https://placekitten.com/g/1200/600") no-repeat;
+  background-size: cover;
+  min-height: 88vh;
+  position: relative;
+}
+.infoExpo{
+  color:white;
+  background-color: black;
+  width:350px;
+  border:1px solid white;
+  border-radius:10px;
+  padding:10px;
+  position: absolute;
+  left:50px;
+  bottom: 50px;
+}
+.principal h2{
+  display: none;;
+}
+
+.infoExpo p{
+  display: inline-block;
+  font-weight: lighter;
+  font-size:16px;
+  line-height: 1.5em;
+  letter-spacing: 1.5px;
+  text-align: justify;
+}
+.infoExpo a{
+  color:white;
+  text-decoration: underline;
+}
+/******************BIOGRAPHIE*************/
+#biographie{
+  padding-top: 2em;
+  background-color: #2e3e4f;
+  opacity: 0.8;
+  margin-top:-0.4em;
+}
+.biographie img{
+  display: block;
+  vertical-align: bottom;
+  float:left;
+  margin:3em 2em 2em 2em;
+}
+.biographie p{
+  font:1.6em/1.6em "opensans";
+  color:#ffffff;
+  text-align: justify;
+  padding:1em;
+}
+.biographie p strong{
+  font-size:3em;
+  font-weight: bold;
+  text-indent: 0;
+  margin-right: 0.01em;
+}
+/**************FOOTER*********/
+.piedpage{
+  background-color: #e04f43;
+  color:white;
+}
+.piedpage ul{
+  width:50em;
+  margin:auto;
+}
+.piedpage li{
+  display: inline-block;
+  font-size: 1.3em;
+  padding:1em;
+  margin-left: 2em;
+}
+.piedpage a{
+  color:white;
+}
+.piedpage a:hover{
+  text-decoration: underline;
+}
+/***************FIN DE LA PAGE D'ACCEUIL*****************/
+
+/************GALERIE *************/
+.galerieimage{
+  display:block;
+  width:65em;
+  margin:auto;
+}
+/*****PHOTOPRINCIPAL*******/
+.photoprincipal{
+  text-align:center;
+  margin-top: 4em;
+  margin-bottom:4em;
+}
+.photoprincipal p{
+  font-size: 1.2em;
+  padding:1.5em;
+  color:white;
+  background-color: rgba(0,0,0,0.9);
+  width:285px;
+  margin: auto;
+}
+.photoprincipal img{
+  border:10px solid #ccc;
+}
+.photoprincipal:hover{
+  transform: scale(1.2);
+  z-index: 1;
+  transition: 1s ease-in-out;
+}
+/*************ENSEMBLE DES PEINTURES********/
+.ensembleimage li{
+  color:white;
+  position: relative;
+  float:left;
+  overflow: hidden;
+}
+.infocomplementaire{
+  display: block;
+  position: absolute;
+  bottom:-200px;
+  left:5px;
+}
+/*Requalibrage de bouteilles et de nu qui était decaller par rapport au autre*/
+.bouteilles .infocomplementaire{
+  position: absolute;
+  bottom:-250px;
+}
+.nu .infocomplementaire{
+  position: absolute;
+  bottom: -215px;
+}
+.infocomplementaire li{
+  font:1.2em/1.2 "ubuntu";
+  padding:1.5em;
+  color:white;
+  background-color: rgba(0,0,0,0.9);
+  width: 265px;/*300-35px*/
+  text-align: center;
+}
+.ensembleimage img{
+  min-height:300px;
+  width:300px;
+  border:5px solid white;
+  overflow: hidden;
+}
+.ensembleimage .gauche:hover{
+  overflow: visible;
+  transform: scale(1.3) translateX(125px) translateY(-5px);/*aligner au centre sur la bordure supérieur*/
+  z-index: 1;
+  -webkit-box-shadow: -1px 3px 31px 11px rgba(0,0,0,1);
+  -moz-box-shadow: -1px 3px 31px 11px rgba(0,0,0,1);
+  box-shadow: -1px 3px 31px 11px rgba(0,0,0,1);
+  transition: 1s ease-in-out;
+}
+.ensembleimage .droite:hover{
+  overflow: visible;
+  transform: scale(1.3)translateX(-125px) translateY(-5px);
+  z-index: 1;
+  -webkit-box-shadow: -1px 3px 31px 11px rgba(0,0,0,1);
+  -moz-box-shadow: -1px 3px 31px 11px rgba(0,0,0,1);
+  box-shadow: -1px 3px 31px 11px rgba(0,0,0,1);
+  transition: 1s ease-in-out;
+}
+/******POUR QUE LES AUTRES IMAGES PERDENT LEUR OPACITÉ****/
+.ensembleimage:hover img:not(:hover){
+  -webkit-filter: grayscale(1) blur(5px);
+  -moz-filter: grayscale(1) blur(5px);
+  -ms-filter: grayscale(1) blur(5px);
+  -o-filter: grayscale(1) blur(5px);
+  filter: grayscale(1) blur(5px);
+}
+/***************BIBLIOGRAPHIE***********/
+.toutcatalogue{
+  text-align: center;
+}
+.catalogue img {
+  width:20em;
+  min-height: 30em;
+  border:10px solid white;
+  box-shadow: 1px 1px 5px black;
+}
+.front cite{
+  font-size: 1.8em;
+  width: 10.5em;
+  margin: auto;
+  padding:1em;
+  background-color:rgba(0,0,0,0.8);
+  color:white;
+  text-align: center;
+  text-decoration: none;
+}
+.catalogue{
+  perspective: 1000;
+}
+.flipcontainer:hover .flipper{transform: rotateY(180deg);}
+
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back {
+  backface-visibility: hidden;
+}
+.flipcontainer {
+  width:22em;
+  margin: auto;
+}
+.back{
+  width: 20em;
+  position: absolute;
+  top:0;
+  left:0;
+  margin:auto;
+  transform: rotateY(180deg);
+}
+.front{
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.catalogue ul{
+  background-color:white;
+}
+.catalogue li{
+  font:1.5em/1.4 "ubuntu";
+  text-align:left;
+  padding:0.5em;
+  color:black;;
+}
+.catalogue h3{
+  margin-top: 1em;
+}
