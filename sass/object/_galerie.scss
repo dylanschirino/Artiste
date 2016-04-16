@@ -1,0 +1,50 @@
+/* ARTISTE
+ *
+ * /sass/object/galerie.scss - Non Design of galerie stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/04/2016
+ */
+
+.galerieimage{
+  display:block;
+  width:65em;
+  margin:auto;
+}
+.galerieimage::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.galerieimage h2{
+  margin:1em 0;
+}
+.ensembleimage div{
+  color:white;
+  float:left;
+  width: 32em;
+  margin: auto;
+  height: 30em;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.ensembleimage img{
+  width:30em;
+  height: 30em;
+}
+.infocomplementaire strong{
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+.infocomplementaire li{
+  font:1.3em/1.4 "ubuntu";
+  padding:1.3em;
+  color:white;
+  background-color: rgba(0,0,0,0.5);
+  width: 265px;
+  text-align: center;
+  transition: 1s ease-in-out;
+}
+.ensembleimage li:hover .infocomplementaire li {
+  transform: translateY(-300px);
+}

@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: 'archisticonormal';
+    src: url('../fonts/archistio/archistico_simple-webfont.eot');
+    src: url('../fonts/archistio/archistico_simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/archistio/archistico_simple-webfont.woff2') format('woff2'),
+         url('../fonts/archistio/archistico_simple-webfont.woff') format('woff'),
+         url('../fonts/archistio/archistico_simple-webfont.ttf') format('truetype'),
+         url('../fonts/archistio/archistico_simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url('../fonts/ubuntu/ubuntu-r-webfont.eot');
+  src: url('../fonts/ubuntu/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.woff2') format('woff2'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.woff') format('woff'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.ttf') format('truetype'),
+  url('../fonts/ubuntu/ubuntu-r-webfont.svg#ubunturegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'opensans';
+  src: url('../fonts/open-sans/opensans-webfont.eot');
+  src: url('../fonts/open-sans/opensans-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/open-sans/opensans-webfont.woff2') format('woff2'),
+  url('../fonts/open-sans/opensans-webfont.woff') format('woff'),
+  url('../fonts/open-sans/opensans-webfont.ttf') format('truetype'),
+  url('../fonts/open-sans/opensans-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'glyphs';
+  src:url('../fonts/fontawesome/icomoon.eot?a0vwcp');
+  src:url('../fonts/fontawesome/icomoon.eot?a0vwcp#iefix') format('embedded-opentype'),
+  url('../fonts/fontawesome/icomoon.ttf?a0vwcp') format('truetype'),
+  url('../fonts/fontawesome/icomoon.woff?a0vwcp') format('woff'),
+  url('../fonts/fontawesome/icomoon.svg?a0vwcp#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

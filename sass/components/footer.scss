@@ -1,0 +1,23 @@
+/* ARTISTE
+ *
+ * /sass/components/footer.scss -  Design of footer stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/04/2016
+ */
+
+ .piedpage{
+   background-color: #e04f43;
+   color:white;
+ }
+ .piedpage li{
+   display: inline-block;
+   font-size: 1.3em;
+   padding:1em;
+ }
+ .piedpage a{
+   color:white;
+ }
+ .piedpage a:hover{
+   text-decoration: underline;
+ }

@@ -1,0 +1,30 @@
+/* ARTISTE
+*
+* /sass/components/header.scss - Design of header stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
+.menu{
+  background-color: #323A45;
+  &__element{
+    &--active{
+      border-bottom: 4px solid #F08362;
+    }
+    &:hover{
+      color:white;
+      border-bottom:2px solid white;
+      cursor: pointer;
+    }
+  }
+  &__link{
+    display: block;
+    font: 1.5em "ubuntu";
+    transition: .4s ease-in-out;
+    padding:0.666em;
+    color:white;
+    &--active{
+      color:#F08362;
+    }
+  }
+}
