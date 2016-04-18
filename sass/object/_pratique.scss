@@ -1,0 +1,39 @@
+/* ARTISTE
+*
+* /sass/object/pratique.scss - Design of pratique stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
+.main{
+  width:90em;
+  margin: auto;
+}
+.form{
+  margin-left: 2em;
+  &__input{
+    display: block;
+    width:30em;
+  }
+  &__button{
+    width:10em;
+    margin:2em 0;
+  }
+}
+.info{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    margin:1em 0;
+  }
+  &__menu{
+    float:left;
+  }
+  &__element{
+    display: block;
+    margin-right: 2em;
+  }
+}

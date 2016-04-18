@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ARTISTE
  *
  * /sass/styles.scss - Main stylesheet
@@ -28,12 +29,12 @@
 
 @font-face {
   font-family: 'fontawesome';
-  src: url("../fonts/fontawesome/fontawesome-webfont-webfont.eot");
-  src: url("../fonts/fontawesome/fontawesome-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont-webfont.woff2") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont-webfont.woff") format("woff"), url("../fonts/fontawesome/fontawesome-webfont-webfont.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont-webfont.svg#fontawesome") format("svg");
+  src: url("../fonts/fontawesome/Linearicons-Free.eot?w118d");
+  src: url("../fonts/fontawesome/Linearicons-Free.eot?#iefixw118d") format("embedded-opentype"), url("../fonts/fontawesome/Linearicons-Free.woff2?w118d") format("woff2"), url("../fonts/fontawesome/Linearicons-Free.woff?w118d") format("woff"), url("../fonts/fontawesome/Linearicons-Free.ttf?w118d") format("truetype"), url("../fonts/fontawesome/Linearicons-Free.svg?w118d#Linearicons-Free") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-.topbar h1, nav h2, .piedpage h3, .principal h2 {
+.topbar h1, nav h2, .piedpage h3, .principal h2, legend {
   display: none; }
 
 html, body, div, span, applet, object, iframe,
@@ -142,6 +143,41 @@ h3 {
     position: absolute;
     right: 3em;
     bottom: 5em; }
+
+/* ARTISTE
+*
+* /sass/object/pratique.scss - Design of pratique stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
+.main {
+  width: 90em;
+  margin: auto; }
+
+.form {
+  margin-left: 2em; }
+  .form__input {
+    display: block;
+    width: 30em; }
+  .form__button {
+    width: 10em;
+    margin: 2em 0; }
+
+.info::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.info__title {
+  margin: 1em 0; }
+
+.info__menu {
+  float: left; }
+
+.info__element {
+  display: block;
+  margin-right: 2em; }
 
 /* ARTISTE
  *
@@ -342,6 +378,75 @@ h3 {
       border-top: 1px solid white; }
       .menu__link--active {
         color: white; } }
+
+/* ARTISTE
+*
+* /sass/components/pratique.scss - Design of pratique stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
+.info__menu {
+  border-right: 1px solid black; }
+
+.info__element {
+  font: 1.6em/1.8 "opensans";
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc; }
+  .info__element--local::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font: 4em/2em "fontawesome";
+    color: #F08362; }
+  .info__element--day::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font: 4em/2em "fontawesome";
+    color: #12A3D7; }
+  .info__element--date::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font: 4em/2em "fontawesome";
+    color: #F08362; }
+  .info__element--price::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font: 4em/2em "fontawesome";
+    color: #12A3D7; }
+  .info__element--phone::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font: 4em/2em "fontawesome";
+    color: #F08362; }
+
+.form__input {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+
+.form__label {
+  display: block;
+  font: 1.6em/1.8 "opensans";
+  margin-top: 1em; }
+
+.form__button {
+  border: none;
+  padding: 1em;
+  font-size: 1.4em;
+  color: white;
+  border-radius: 4px;
+  background-color: #323A45; }
+  .form__button:hover {
+    transition: .3s linear;
+    cursor: pointer;
+    background-color: #12A3D7; }
 
 /* ARTISTE
 *

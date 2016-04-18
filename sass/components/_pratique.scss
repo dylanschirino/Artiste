@@ -1,0 +1,82 @@
+/* ARTISTE
+*
+* /sass/components/pratique.scss - Design of pratique stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
+.info{
+  &__menu{
+    border-right: 1px solid black;
+  }
+  &__element{
+    font: 1.6em/1.8 "opensans";
+    padding:1em;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    &--local::before{
+      content:"";
+      display: block;
+      text-align: center;
+      font:4em/2em "fontawesome";
+      color:#F08362;
+
+    }
+    &--day::before{
+      content:"";
+      display: block;
+      text-align: center;
+      font:4em/2em "fontawesome";
+      color:#12A3D7;
+    }
+    &--date::before{
+      content:"";
+      display: block;
+      text-align: center;
+      font:4em/2em "fontawesome";
+      color:#F08362;
+    }
+    &--price::before{
+      content:"";
+      display: block;
+      text-align: center;
+      font:4em/2em "fontawesome";
+      color:#12A3D7;
+    }
+    &--phone::before{
+    content:"";
+    display: block;
+    text-align: center;
+    font:4em/2em "fontawesome";
+    color:#F08362;
+  }
+  }
+}
+
+.form{
+  &__input{
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  &__label{
+    display: block;
+    font:1.6em/1.8 "opensans";
+    margin-top: 1em;
+  }
+  &__button{
+    border: none;
+    padding:1em;
+    font-size: 1.4em;
+    color:white;
+    border-radius: 4px;
+    background-color: #323A45;
+
+    &:hover{
+      transition: .3s linear;
+      cursor: pointer;
+      background-color: #12A3D7
+    }
+  }
+}
