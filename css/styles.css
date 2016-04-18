@@ -173,7 +173,8 @@ h3 {
   margin: 1em 0; }
 
 .info__menu {
-  float: left; }
+  float: left;
+  margin-bottom: 4em; }
 
 .info__element {
   display: block;
@@ -292,6 +293,20 @@ h3 {
 
 /* ARTISTE
  *
+ * /sass/object/lien.scss - Non Design of lien stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/04/2016
+ */
+.liens__menu {
+  padding-bottom: 4em; }
+
+.liens__link {
+  display: flex;
+  flex-direction: column; }
+
+/* ARTISTE
+ *
  * /sass/object/footer.scss - NOn Design of footer stylesheet
  *
  * coded by Dylan Schirino
@@ -387,7 +402,7 @@ h3 {
 * started at 03/04/2016
 */
 .info__menu {
-  border-right: 1px solid black; }
+  border-right: 1px solid #ccc; }
 
 .info__element {
   font: 1.6em/1.8 "opensans";
@@ -535,6 +550,28 @@ h3 {
     .infoExpo__text--link:hover {
       color: white;
       background-color: #0063B3; }
+
+/* ARTISTE
+ *
+ * /sass/components/lien.scss - Non Design of lien stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/04/2016
+ */
+.liens__link {
+  font: 2em/2em "opensans";
+  padding: 2em;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  transition: .3s ease-in-out; }
+  .liens__link:hover {
+    cursor: pointer;
+    background-color: #43566D;
+    color: white; }
+    .liens__link:hover::before {
+      content: "";
+      display: block;
+      font: 2em/2em "fontawesome"; }
 
 /* ARTISTE
 *

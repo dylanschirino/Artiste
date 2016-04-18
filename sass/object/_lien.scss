@@ -1,0 +1,17 @@
+/* ARTISTE
+ *
+ * /sass/object/lien.scss - Non Design of lien stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/04/2016
+ */
+
+.liens{
+  &__menu{
+    padding-bottom: 4em;
+  }
+  &__link{
+    display: flex;
+    flex-direction: column;
+  }
+}

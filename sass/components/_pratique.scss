@@ -7,7 +7,7 @@
 */
 .info{
   &__menu{
-    border-right: 1px solid black;
+    border-right: 1px solid #ccc;
   }
   &__element{
     font: 1.6em/1.8 "opensans";
@@ -45,12 +45,12 @@
       color:#12A3D7;
     }
     &--phone::before{
-    content:"";
-    display: block;
-    text-align: center;
-    font:4em/2em "fontawesome";
-    color:#F08362;
-  }
+      content:"";
+      display: block;
+      text-align: center;
+      font:4em/2em "fontawesome";
+      color:#F08362;
+    }
   }
 }
 

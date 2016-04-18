@@ -1,0 +1,28 @@
+/* ARTISTE
+ *
+ * /sass/components/lien.scss - Non Design of lien stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/04/2016
+ */
+
+.liens{
+  &__link{
+    font: 2em/2em "opensans";
+    padding: 2em;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    transition:.3s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #43566D;
+        color: white;
+        &::before{
+          content:"";
+          display: block;
+          font:2em/2em "fontawesome";
+        }
+    }
+  }
+}
