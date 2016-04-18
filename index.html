@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="description" content="nicolas,stael,exposition,artiste,peinture">
   <meta name="author" content="Dylan Schirino">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
   <!--[if lt IE 9]>
@@ -16,40 +17,44 @@
     <header>
       <div class="topbar">
         <h1 aria-level="1" class="topbar__title">Nicolas de Sta&euml;l - Accueil</h1>
+              <div class="topbar__header">
         <div class="topbar__logo">
           <a href="index.html">Nicolas De Sta&euml;l</a>
         </div>
         <nav class="topbar__menu">
-
           <h2 aria-level="2">Menu</h2>
-          <ul class="menu">
-            <li class="menu__element menu__element--active"><a href="index.html" class="menu__link menu__link--active">Home</a></li>
-            <li class="menu__element"><a href="galerie.html" class="menu__link">Galerie</a></li>
-            <li class="menu__element"><a href="bibliographie.html" class="menu__link">Bibliographie</a></li>
-            <li class="menu__element"><a href="pratique.html" class="menu__link">Pratique</a></li>
-            <li class="menu__element"><a href="lien.html" class="menu__link">Liens</a></li>
-      </ul>
+        <input type="checkbox" id="burger-shower" class="topbar__shower">
+    <label for="burger-shower" class="hamburger">
+    </label>
+    <ul class="menu">
+      <li class="menu__element menu__element--active"><a href="index.html" class="menu__link menu__link--active">Home</a></li>
+      <li class="menu__element"><a href="galerie.html" class="menu__link">Galerie</a></li>
+      <li class="menu__element"><a href="bibliographie.html" class="menu__link">Bibliographie</a></li>
+      <li class="menu__element"><a href="pratique.html" class="menu__link">Pratique</a></li>
+      <li class="menu__element"><a href="lien.html" class="menu__link">Liens</a></li>
+    </ul>
         </nav><!--/menu-->
+      </div>
       </div><!--/topbar-->
     </header>
     <main>
       <section class="principal">
           <h2 aria-level="2">News Expo</h2>
 
-          <div class="infoExpo">
-            <p>Expo&nbsp;:&nbsp;Palais des Beaux-Arts de Houtesiplou</p>
-            <p>Du 20 novembre 2005 au 18 mars 2006</p>
-            <p>Ouvert tous les jours de 10h à 18h sauf le lundi</p>
-            <p><a href="pratique.html">Plus d'informations</a></p>
+          <div class="principal__infoExpo">
+            <p class="infoExpo__text">Expo&nbsp;:&nbsp;Palais des Beaux-Arts de Houtesiplou</p>
+            <p class="infoExpo__text">Du 20 novembre 2005 au 18 mars 2006</p>
+            <p class="infoExpo__text">Ouvert tous les jours de 10h à 18h sauf le lundi</p>
+            <p class="infoExpo__text"><a href="pratique.html" class="infoExpo__text--link">Plus d'informations</a></p>
           </div>
 
       </section>
-      <section id="biographie">
-        <h2 aria-level="2">Biographie</h2>
-        <article class="biographie">
-          <h3  aria-level="3">Sa vie,&nbsp;Son histoire</h3>
-          <img src="./img/photo.jpg" width="300" height="258" alt="Photo de Nicolas"/>
-          <p>
+      <section class="biographie">
+        <h2 aria-level="2" class="biographie__title">Biographie</h2>
+        <article class="biographie__article">
+          <h3 aria-level="3">Sa vie,&nbsp;Son histoire</h3>
+          <img src="./img/photo.jpg" width="300" height="258" alt="Photo de Nicolas" class="biographie__image">
+          <p class="biographie__text">
             Nicolas de Sta&euml;l (Saint-Petersbourg,&nbsp;1914&nbsp;-&nbsp;Antibes,&nbsp;1955).&nbsp;La carrière de Nicolas de Sta&euml;l s'étale sur quinze ans,&nbsp;à travers plus d'un millier d'œuvres,&nbsp;influencées par Cézanne,&nbsp;Matisse,&nbsp;Van Gogh,&nbsp;Braque,&nbsp;Soutine,&nbsp;etc Il n'a gardé de son ascendance balte
             qu'un fond de romantisme et le sentiment d'un vertige désespéré,
             longtemps dominés par l'&Eacute;ducation revue en Europe.
@@ -57,7 +62,7 @@
             Il entreprend un retournement de sa vision entre 1951 et 1952,&nbsp;passant d'une non-figuration dont il est,malgré lui,&nbsp;l'un des champions à une approche de la réalité résolument neuve.
           </p>
           <img src="./img/photo_atelier.jpg" width="300" height="300" alt="Photo de Nicolas"/>
-          <p>
+          <p class="biographie__text">
             La très forte personnalité du peintre alliée à une intelligence aigu
             de la peinture et une fine perception de l'espace-lumière engendrent quelques centaines d'oeuvres-clé
             de l'histoire de l'art contemporain.
@@ -77,14 +82,15 @@
     <footer>
       <section class="piedpage">
         <h3  aria-level="3">Info complémentaire</h3>
-        <ul>
-          <li>Dylan Schirino© </li>
-          <li><a href="mailto:dylan.schirino@hotmail.fr">Contacter le Webmaster</a></li>
-          <li> 2015 - 2016 </li>
+        <ul class="piedpage__list">
+          <li class="piedpage__element">Dylan Schirino© </li>
+          <li class="piedpage__element"><a href="mailto:dylan.schirino@hotmail.fr"class="piedpage__element--link">Contacter le Webmaster</a></li>
+          <li class="piedpage__element"> 2015 - 2016 </li>
         </ul>
       </section>
     </footer>
 
   </div><!--/wrapper-->
+  <script type="text/javascript" src="assets/responsive.js"/>
 </body>
 </html>

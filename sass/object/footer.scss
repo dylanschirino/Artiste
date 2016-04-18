@@ -5,10 +5,11 @@
  * coded by Dylan Schirino
  * started at 03/04/2016
  */
- .piedpage ul{
-   width:50em;
-   margin:auto;
- }
- .piedpage li{
-   margin-left: 2em;
+ .piedpage{
+   &__list{
+     text-align: center;
+   }
+   &__element{
+        margin-left: 2em;
+   }
  }

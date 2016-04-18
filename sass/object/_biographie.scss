@@ -5,28 +5,25 @@
  * coded by Dylan Schirino
  * started at 03/04/2016
  */
- #biographie{
+ .biographie{
   width:90em;
   margin: auto;
-}
-#biographie::after{
-  content: "";
-  display: block;
-  clear: both;
-}
-#biographie h2{
-  margin-top: 1em;
-}
-.biographie img{
-  display: block;
-  margin-left: 1.5em;
-}
-.biographie p{
-  width: 35em;
-  float: left;
-  margin-top: 1em;
-}
-.biographie p:last-child{
-  float: right;
-  margin-bottom: 1em;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    margin-top: 1em;
+  }
+  &__image{
+    display: block;
+    margin-left: 1.5em;
+  }
+  &__text{
+    width: 35em;
+    float: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }

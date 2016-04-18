@@ -27,9 +27,9 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'glyphs';
-  src: url("../fonts/fontawesome/icomoon.eot?a0vwcp");
-  src: url("../fonts/fontawesome/icomoon.eot?a0vwcp#iefix") format("embedded-opentype"), url("../fonts/fontawesome/icomoon.ttf?a0vwcp") format("truetype"), url("../fonts/fontawesome/icomoon.woff?a0vwcp") format("woff"), url("../fonts/fontawesome/icomoon.svg?a0vwcp#icomoon") format("svg");
+  font-family: 'fontawesome';
+  src: url("../fonts/fontawesome/fontawesome-webfont-webfont.eot");
+  src: url("../fonts/fontawesome/fontawesome-webfont-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont-webfont.woff2") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont-webfont.woff") format("woff"), url("../fonts/fontawesome/fontawesome-webfont-webfont.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont-webfont.svg#fontawesome") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -137,12 +137,11 @@ h3 {
 .principal {
   min-height: 88vh;
   position: relative; }
-
-.infoExpo {
-  width: 35em;
-  position: absolute;
-  left: 5em;
-  top: 5em; }
+  .principal__infoExpo {
+    width: 35em;
+    position: absolute;
+    right: 3em;
+    bottom: 5em; }
 
 /* ARTISTE
  *
@@ -151,30 +150,23 @@ h3 {
  * coded by Dylan Schirino
  * started at 03/04/2016
  */
-#biographie {
+.biographie {
   width: 90em;
   margin: auto; }
-
-#biographie::after {
-  content: "";
-  display: block;
-  clear: both; }
-
-#biographie h2 {
-  margin-top: 1em; }
-
-.biographie img {
-  display: block;
-  margin-left: 1.5em; }
-
-.biographie p {
-  width: 35em;
-  float: left;
-  margin-top: 1em; }
-
-.biographie p:last-child {
-  float: right;
-  margin-bottom: 1em; }
+  .biographie::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .biographie__title {
+    margin-top: 1em; }
+  .biographie__image {
+    display: block;
+    margin-left: 1.5em; }
+  .biographie__text {
+    width: 35em;
+    float: left;
+    margin-top: 1em;
+    margin-bottom: 1em; }
 
 /* ARTISTE
  *
@@ -226,72 +218,41 @@ h3 {
   transform: translateY(-300px); }
 
 /* ARTISTE
- *
- * /sass/object/bibliographie.scss - Non Design of bibliographie stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/object/bibliographie.scss - Non Design of bibliographie stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 .catalogue {
-  margin-bottom: 2em; }
-
-.catalogue img {
-  width: 20em;
-  min-height: 30em;
-  border: 10px solid white;
-  box-shadow: 1px 1px 5px black; }
-
-.front cite {
-  display: block;
-  font-size: 1.6em;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  text-align: center;
-  text-decoration: none; }
-
-.catalogue {
+  margin-bottom: 7em;
   perspective: 1000; }
+  .catalogue__title {
+    margin-top: 1em; }
 
-.flipcontainer:hover .flipper {
-  transform: rotateY(180deg); }
-
-.flipper {
-  transition: 1s;
-  transform-style: preserve-3d;
-  position: relative; }
-
-.front, .back {
-  backface-visibility: hidden; }
-
-.flipcontainer {
-  width: 22em;
-  margin: auto; }
-
-.back {
-  width: 20em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: auto;
-  transform: rotateY(180deg);
-  border: 1px solid black; }
-
-.front {
-  z-index: 2;
-  transform: rotateY(0deg); }
-
-.catalogue ul {
-  background-color: white; }
-
-.catalogue li {
-  font: 1.5em/1.4 "ubuntu";
-  text-align: left;
-  padding: 0.5em;
-  color: black; }
-
-.catalogue h3 {
-  margin-top: 1em; }
+.livre {
+  margin-bottom: 5em; }
+  .livre__title {
+    margin-top: 1em; }
+  .livre__image {
+    width: 20em;
+    min-height: 30em; }
+  .livre__front--cite {
+    display: block; }
+  .livre__flipcontainer {
+    width: 22em;
+    margin: auto; }
+  .livre__flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative; }
+  .livre__back {
+    backface-visibility: hidden;
+    width: 25em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto; }
 
 /* ARTISTE
  *
@@ -300,11 +261,10 @@ h3 {
  * coded by Dylan Schirino
  * started at 03/04/2016
  */
-.piedpage ul {
-  width: 50em;
-  margin: auto; }
+.piedpage__list {
+  text-align: center; }
 
-.piedpage li {
+.piedpage__element {
   margin-left: 2em; }
 
 /* ARTISTE
@@ -331,13 +291,94 @@ h3 {
     .menu__link--active {
       color: #F08362; }
 
+.topbar {
+  background-color: #323A45; }
+  .topbar__shower {
+    display: none; }
+
+@media screen and (max-width: 878px) {
+  .menu__link {
+    font-size: 1.2em; }
+  .topbar__logo {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    left: 10px; } }
+
+@media screen and (max-width: 665px) {
+  .topbar__shower {
+    display: none; }
+    .topbar__shower:checked ~ .menu {
+      display: block; }
+  .topbar__header {
+    background-color: #323A45;
+    min-height: 72px; }
+  .hamburger {
+    background: url("../img/burger.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    top: 16px;
+    right: 15px;
+    z-index: 100;
+    cursor: pointer; }
+  .menu {
+    display: none;
+    padding-top: 7em; }
+    .menu__element {
+      display: block;
+      text-align: center; }
+      .menu__element--active {
+        border: none; }
+      .menu__element:hover {
+        background-color: #52647C; }
+    .menu__link {
+      display: block;
+      margin: 0;
+      padding: 2em;
+      font-size: 1.4em;
+      border-top: 1px solid white; }
+      .menu__link--active {
+        color: white; } }
+
 /* ARTISTE
- *
- * /sass/components/bibliographie.scss - Non Design of bibliographie stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/components/bibliographie.scss - Non Design of bibliographie stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
+.livre__image {
+  border: 10px solid white;
+  box-shadow: 1px 1px 5px black; }
+
+.livre__front {
+  backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateY(0deg); }
+  .livre__front--cite {
+    font-size: 1.6em;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    text-decoration: none; }
+
+.livre__flipcontainer:hover .livre__flipper {
+  transform: rotateY(180deg); }
+
+.livre__back {
+  transform: rotateY(180deg);
+  border: 1px solid black; }
+
+.back__menu--element {
+  font: 1.5em/1.4 "ubuntu";
+  padding: 0.7em;
+  text-align: left;
+  color: black; }
+
 /* ARTISTE
  *
  * /sass/components/biographie.scss - Design of biographie stylesheet
@@ -345,7 +386,7 @@ h3 {
  * coded by Dylan Schirino
  * started at 03/04/2016
  */
-.biographie p {
+.biographie__text {
   font: 1.5em/1.6em "opensans";
   color: black;
   padding: 1em; }
@@ -358,61 +399,55 @@ h3 {
  * started at 03/04/2016
  */
 /* ARTISTE
- *
- * /sass/components/mainimage.scss - Design of mainimage stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/components/mainimage.scss - Design of mainimage stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 .principal {
   background: url("../img/tableaux-acceuil.jpg") no-repeat center fixed;
   background-size: cover; }
+  .principal__infoExpo {
+    color: white;
+    border: 1px solid white;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.7); }
 
-.infoExpo {
-  color: white;
-  border: 1px solid white;
-  padding: 1em;
-  background-color: rgba(0, 0, 0, 0.7); }
-
-.infoExpo p {
+.infoExpo__text {
   display: inline-block;
   font-weight: lighter;
   font-size: 1.6em;
   line-height: 1.5em;
   letter-spacing: 1.5px;
   padding: 0.3em; }
-
-.infoExpo a {
-  background-color: #12A3D7;
-  border-radius: 5px;
-  padding: 0.5em;
-  color: black;
-  transition: .3s ease; }
-
-.infoExpo a:hover {
-  color: white;
-  background-color: #0063B3; }
+  .infoExpo__text--link {
+    background-color: #12A3D7;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: black;
+    transition: .3s ease; }
+    .infoExpo__text--link:hover {
+      color: white;
+      background-color: #0063B3; }
 
 /* ARTISTE
- *
- * /sass/components/footer.scss -  Design of footer stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/components/footer.scss -  Design of footer stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 .piedpage {
   background-color: #e04f43;
   color: white; }
-
-.piedpage li {
-  display: inline-block;
-  font-size: 1.3em;
-  padding: 1em; }
-
-.piedpage a {
-  color: white; }
-
-.piedpage a:hover {
-  text-decoration: underline; }
+  .piedpage__element {
+    display: inline-block;
+    font-size: 1.3em;
+    padding: 1em; }
+    .piedpage__element--link {
+      color: white; }
+      .piedpage__element--link:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=styles.css.map */

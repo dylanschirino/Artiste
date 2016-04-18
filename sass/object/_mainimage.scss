@@ -8,10 +8,11 @@
  .principal{
    min-height: 88vh;
    position: relative;
- }
- .infoExpo{
-   width:35em;
-   position: absolute;
-   left:5em;
-   top: 5em;
+   
+   &__infoExpo{
+     width:35em;
+     position: absolute;
+     right:3em;
+     bottom: 5em;
+   }
  }

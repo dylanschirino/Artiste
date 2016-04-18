@@ -28,3 +28,76 @@
     }
   }
 }
+.topbar{
+  background-color: #323A45;
+  &__shower{
+    display: none;
+  }
+}
+@media screen and (max-width:878px) {
+  .menu{
+    &__link{
+      font-size: 1.2em;
+    }
+  }
+  .topbar{
+    &__logo{
+      width:150px;
+      height:60px;
+      position: absolute;
+      left: 10px;
+    }
+  }
+
+}
+@media screen and (max-width:665px) {
+
+  .topbar{
+    &__shower{
+        display: none;
+      &:checked ~ .menu {
+        display: block;
+      }
+    }
+    &__header{
+      background-color: #323A45;
+      min-height:72px;
+    }
+  }
+  .hamburger{
+    background: url("../img/burger.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    top: 16px;
+    right: 15px;
+    z-index: 100;
+    cursor:pointer;
+  }
+  .menu{
+    display: none;
+    padding-top: 7em;
+    &__element{
+      display: block;
+      text-align: center;
+      &--active{
+        border:none;
+      }
+      &:hover{
+        background-color: #52647C;
+      }
+    }
+    &__link{
+      display: block;
+      margin:0;
+      padding:2em;
+      font-size: 1.4em;
+      border-top: 1px solid white;
+      &--active{
+        color:white;
+      }
+    }
+  }
+}

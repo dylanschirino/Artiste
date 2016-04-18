@@ -21,12 +21,18 @@ COMMENCER LE 19 NOVEMBRE 2015
     <header>
       <div class="topbar">
         <h1 aria-level="1" class="topbar__title">Nicolas de Sta&euml;l - Galerie</h1>
+        <div class="topbar__header">
         <div class="topbar__logo">
           <a href="index.html">Nicolas De Sta&euml;l</a>
         </div>
         <nav class="topbar__menu">
 
           <h2 aria-level="2">Menu</h2>
+
+          <input type="checkbox" id="burger-shower" class="topbar__shower">
+          <label for="burger-shower" class="hamburger">
+          </label>
+          
           <ul class="menu">
             <li class="menu__element"><a href="index.html" class="menu__link">Home</a></li>
             <li class="menu__element menu__element--active"><a href="galerie.html" class="menu__link menu__link--active">Galerie</a></li>
@@ -35,6 +41,7 @@ COMMENCER LE 19 NOVEMBRE 2015
             <li class="menu__element"><a href="lien.html" class="menu__link">Liens</a></li>
       </ul>
         </nav><!--/menu-->
+      </div>
       </div><!--/topbar-->
     </header>
     <main>
@@ -254,10 +261,10 @@ COMMENCER LE 19 NOVEMBRE 2015
     <footer>
       <section class="piedpage">
         <h3  aria-level="3">Info complémentaire</h3>
-        <ul>
-          <li>Dylan Schirino© </li>
-          <li><a href="mailto:dylan.schirino@hotmail.fr">Contacter le Webmaster</a></li>
-          <li> 2015 - 2016 </li>
+        <ul class="piedpage__list">
+          <li class="piedpage__element">Dylan Schirino© </li>
+          <li class="piedpage__element"><a href="mailto:dylan.schirino@hotmail.fr"class="piedpage__element--link">Contacter le Webmaster</a></li>
+          <li class="piedpage__element"> 2015 - 2016 </li>
         </ul>
       </section>
     </footer>

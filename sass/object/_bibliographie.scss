@@ -1,69 +1,47 @@
 /* ARTISTE
- *
- * /sass/object/bibliographie.scss - Non Design of bibliographie stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/object/bibliographie.scss - Non Design of bibliographie stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 .catalogue{
-margin-bottom: 2em;
-}
-.catalogue img {
-  width:20em;
-  min-height: 30em;
-  border:10px solid white;
-  box-shadow: 1px 1px 5px black;
-}
-.front cite{
-  display: block;
-  font-size: 1.6em;
-  padding:1em;
-  background-color:rgba(0,0,0,0.6);
-  color:white;
-  text-align: center;
-  text-decoration: none;
-}
-.catalogue{
+  margin-bottom: 7em;
   perspective: 1000;
-}
-.flipcontainer:hover .flipper{
-  transform: rotateY(180deg);
+  &__title{
+    margin-top: 1em;
+  }
 }
 
-.flipper {
-  transition: 1s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-.front, .back {
-  backface-visibility: hidden;
-}
-.flipcontainer {
-  width:22em;
-  margin: auto;
-}
-.back{
-  width: 20em;
-  position: absolute;
-  top:0;
-  left:0;
-  margin:auto;
-  transform: rotateY(180deg);
-  border:1px solid black;
-}
-.front{
-  z-index: 2;
-  transform: rotateY(0deg);
-}
-.catalogue ul{
-  background-color:white;
-}
-.catalogue li{
-  font:1.5em/1.4 "ubuntu";
-  text-align:left;
-  padding:0.5em;
-  color:black;;
-}
-.catalogue h3{
-  margin-top: 1em;
+.livre{
+  margin-bottom: 5em;
+  &__title{
+    margin-top: 1em;
+  }
+  &__image{
+    width:20em;
+    min-height: 30em;
+  }
+  &__front{
+    &--cite{
+      display: block;
+    }
+  }
+  &__flipcontainer{
+    width:22em;
+    margin: auto;
+  }
+  &__flipper{
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  &__back{
+      backface-visibility: hidden;
+      width: 25em;
+      position: absolute;
+      top:0;
+      left:0;
+      margin:auto;
+  }
 }

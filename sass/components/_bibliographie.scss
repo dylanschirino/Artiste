@@ -1,7 +1,46 @@
 /* ARTISTE
- *
- * /sass/components/bibliographie.scss - Non Design of bibliographie stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/components/bibliographie.scss - Non Design of bibliographie stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
+
+.livre{
+  &__image{
+    border:10px solid white;
+    box-shadow: 1px 1px 5px black;
+  }
+  &__front{
+    backface-visibility: hidden;
+    z-index: 2;
+    transform: rotateY(0deg);
+    &--cite{
+      font-size: 1.6em;
+      padding:1em;
+      background-color:rgba(0,0,0,0.6);
+      color:white;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  &__flipcontainer{
+    &:hover .livre__flipper{
+      transform: rotateY(180deg);
+    }
+  }
+  &__back{
+    transform: rotateY(180deg);
+    border:1px solid black;
+  }
+}
+.back{
+  &__menu{
+    &--element{
+      font:1.5em/1.4 "ubuntu";
+      padding:0.7em;
+      text-align:left;
+      color:black;;
+    }
+  }
+}

@@ -6,8 +6,10 @@
  * started at 03/04/2016
  */
 
-.biographie p{
-  font:1.5em/1.6em "opensans";
-  color:black;
-  padding: 1em;
+.biographie{
+  &__text{
+    font:1.5em/1.6em "opensans";
+    color:black;
+    padding: 1em;
+  }
 }

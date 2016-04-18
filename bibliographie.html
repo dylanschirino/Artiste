@@ -21,10 +21,15 @@ COMMENCER LE 19 NOVEMBRE 2015
     <header>
       <div class="topbar">
         <h1 aria-level="1" class="topbar__title">Nicolas de Sta&euml;l - bibliographie</h1>
+        <div class="topbar__header">
         <div class="topbar__logo">
           <a href="index.html">Nicolas De Sta&euml;l</a>
         </div>
         <nav class="topbar__menu">
+
+          <input type="checkbox" id="burger-shower" class="topbar__shower">
+          <label for="burger-shower" class="hamburger">
+          </label>
 
           <h2 aria-level="2">Menu</h2>
           <ul class="menu">
@@ -35,131 +40,132 @@ COMMENCER LE 19 NOVEMBRE 2015
             <li class="menu__element"><a href="lien.html" class="menu__link">Liens</a></li>
       </ul>
         </nav><!--/menu-->
+      </div>
       </div><!--/topbar-->
     </header>
 
     <main>
       <section class="catalogue">
-        <h2 role="heading" aria-level="2">
+        <h2 role="heading" aria-level="2" class="catalogue__title">
           Bibliographie</h2>
           <div class="toutcatalogue">
 
-            <div class="catalogue livre1">
+            <div class="livre">
 
-              <h3 role="heading" aria-level="3">Nicolas De Sta&euml;l catalogue raisonne de l'oeuvre peint</h3>
-              <div class="flipcontainer">
-                <div class="flipper">
-                  <div class="front">
-                    <img src="./img/livre/tome1.jpg" width="116" height="161" alt="Illustration de Catalogue de l'oeuvre peint">
-                    <cite>De Françoise De Sta&euml;l</cite>
+              <h3 role="heading" aria-level="3" class="livre__title">Nicolas De Sta&euml;l catalogue raisonne de l'oeuvre peint</h3>
+              <div class="livre__flipcontainer">
+                <div class="livre__flipper">
+                  <div class="livre__front">
+                    <img src="./img/livre/tome1.jpg" width="116" height="161" alt="Illustration de Catalogue de l'oeuvre peint" class="livre__image">
+                    <cite class="livre__front--cite">De Françoise De Sta&euml;l</cite>
                   </div><!--front-->
-                  <div class="back">
-                    <ul>
-                      <li>Edition&nbsp;:&nbsp;Ides et Calendes</li>
-                      <li>Type de livre&nbsp;:&nbsp;Album </li>
-                      <li>1280 pages avec</li>
-                      <li>Illustration présente</li>
-                      <li>Format 24 x 30</li>
-                      <li>Relié avec couverture illustrée</li>
-                      <li>
+                  <div class="livre__back">
+                    <ul class="back__menu">
+                      <li class="back__menu--element">Edition&nbsp;:&nbsp;Ides et Calendes</li>
+                      <li class="back__menu--element">Type de livre&nbsp;:&nbsp;Album </li>
+                      <li class="back__menu--element">1280 pages avec</li>
+                      <li class="back__menu--element">Illustration présente</li>
+                      <li class="back__menu--element">Format 24 x 30</li>
+                      <li class="back__menu--element">Relié avec couverture illustrée</li>
+                      <li class="back__menu--element">
                         <p>Dans cet ouvrage,&nbsp;vous trouverez l'intégralité de l'oeuvre peint de Nicolas de Sta&euml;l dans un
                           ouvrage très richement illustré,&nbsp;réalisé par Françoise de Sta&euml;l.
                         </p>
                       </li>
                     </ul>
                   </div><!--back-->
-                </div><!--flipper-->
+                </div><!--livre__flipper-->
               </div><!--flipcontainer-->
             </div>
 
-            <div class="catalogue livre2">
-              <h3 role="heading" aria-level="3">LA MESURE DE NICOLAS DE STA&Euml;L</h3>
-              <div class="flipcontainer">
-                <div class="flipper">
-                  <div class="front">
-                    <img src="./img/livre/tome2.jpg"width="150" height="184" alt="Illustration du livre la mesure de NDS">
-                    <cite>De Jean-Pierre Jouffroy</cite>
-                  </div><!--front-->
-                  <div class="back">
-                    <ul>
-                      <li>Edition&nbsp;:&nbsp;Ides et Calendes</li>
-                      <li>Type de livre&nbsp;:&nbsp;Album </li>
-                      <li>240 pages</li>
-                      <li>Format 25 x 32</li>
-                      <li>127 illustrations</li>
-                      <li>Relié avec couverture illustrée</li>
+            <div class="livre">
+              <h3 class="livre__title" role="heading" aria-level="3">LA MESURE DE NICOLAS DE STA&Euml;L</h3>
+              <div class="livre__flipcontainer">
+                <div class="livre__flipper">
+                  <div class="livre__front">
+                    <img class="livre__image" src="./img/livre/tome2.jpg"width="150" height="184" alt="Illustration du livre la mesure de NDS">
+                    <cite class="livre__front--cite">De Jean-Pierre Jouffroy</cite>
+                  </div><!--livre__front-->
+                  <div class="livre__back">
+                    <ul class="back__menu">
+                      <li class="back__menu--element">Edition&nbsp;:&nbsp;Ides et Calendes</li>
+                      <li class="back__menu--element">Type de livre&nbsp;:&nbsp;Album </li>
+                      <li class="back__menu--element">240 pages</li>
+                      <li class="back__menu--element">Format 25 x 32</li>
+                      <li class="back__menu--element">127 illustrations</li>
+                      <li class="back__menu--element">Relié avec couverture illustrée</li>
                     </ul>
                   </div>
-                </div><!--flipper-->
-              </div><!--flipcontainer-->
+                </div><!--livre__flipper-->
+              </div><!--livre__flipcontainer-->
             </div>
 
-            <div class="catalogue livre3">
+            <div class="livre">
 
-              <h3 role="heading" aria-level="3">LE PRINCE FOUDROYE La vie De Nicolas de Sta&euml;l</h3>
-              <div class="flipcontainer">
-                <div class="flipper">
-                  <div class="front">
-                    <img src="./img/livre/tome3.jpg" width="115" height="175" alt="Illustration du livre le prince foudroye">
-                    <cite>De Laurent Greilsamer</cite>
+              <h3 class="livre__title" role="heading" aria-level="3">LE PRINCE FOUDROYE La vie De Nicolas de Sta&euml;l</h3>
+              <div class="livre__flipcontainer">
+                <div class="livre__flipper">
+                  <div class="livre__front">
+                    <img class="livre__image" src="./img/livre/tome3.jpg" width="115" height="175" alt="Illustration du livre le prince foudroye">
+                    <cite class="livre__front--cite">De Laurent Greilsamer</cite>
                   </div>
-                  <div class="back">
-                    <ul>
-                      <li>Edition&nbsp;:&nbsp;Fayard</li>
-                      <li>Type de livre&nbsp;:&nbsp;Document</li>
-                      <li>335 pages</li>
-                      <li>Format 18 x 23</li>
-                      <li>Illustration présente</li>
-                      <li>Broché avec couverture illustrée</li>
+                  <div class="livre__back">
+                    <ul class="back__menu">
+                      <li class="back__menu--element">Edition&nbsp;:&nbsp;Fayard</li>
+                      <li class="back__menu--element">Type de livre&nbsp;:&nbsp;Document</li>
+                      <li class="back__menu--element">335 pages</li>
+                      <li class="back__menu--element">Format 18 x 23</li>
+                      <li class="back__menu--element">Illustration présente</li>
+                      <li class="back__menu--element">Broché avec couverture illustrée</li>
                     </ul>
                   </div>
                 </div><!--flipper-->
-              </div><!--flipcontainer-->
+              </div><!--livre__flipcontainer-->
             </div>
 
-            <div class="catalogue livre4">
+            <div class="livre">
 
-              <h3 role="heading" aria-level="3">NICOLAS DE STA&Euml;L L'aventure en peinture </h3>
-              <div class="flipcontainer">
+              <h3 class="livre__title" role="heading" aria-level="3">NICOLAS DE STA&Euml;L L'aventure en peinture </h3>
+              <div class="livre__flipcontainer">
                 <div class="flipper">
-                  <div class="front">
-                    <img src="./img/livre/tome4.gif" width="108" height="178" alt="Illustration du livre l'aventure en peinture">
-                    <cite>De Arno Mansar</cite>
+                  <div class="livre__front">
+                    <img class="livre__image" src="./img/livre/tome4.gif" width="108" height="178" alt="Illustration du livre l'aventure en peinture">
+                    <cite class="livre__front--cite">De Arno Mansar</cite>
                   </div>
-                  <div class="back">
-                    <ul>
-                      <li>Edition&nbsp;:&nbsp;La Renaissance du Livre</li>
-                      <li>Type de livre&nbsp;:&nbsp;Document</li>
-                      <li>236 pages</li>
-                      <li>Format 18 x 24</li>
-                      <li>Illustration présente</li>
-                      <li>Broché avec couverture illustrée</li>
+                  <div class="livre__back">
+                    <ul class="back__menu">
+                      <li class="back__menu--element">Edition&nbsp;:&nbsp;La Renaissance du Livre</li>
+                      <li class="back__menu--element">Type de livre&nbsp;:&nbsp;Document</li>
+                      <li class="back__menu--element">236 pages</li>
+                      <li class="back__menu--element">Format 18 x 24</li>
+                      <li class="back__menu--element">Illustration présente</li>
+                      <li class="back__menu--element">Broché avec couverture illustrée</li>
                     </ul>
                   </div>
                 </div><!--flipper-->
-              </div><!--flipcontainer-->
+              </div><!--livre__flipcontainer-->
             </div>
-            <div class="catalogue livre5">
+            <div class="livre">
 
-              <h3 role="heading" aria-level="3">NICOLAS DE STA&Euml;L</h3>
-              <div class="flipcontainer">
-                <div class="flipper">
-                  <div class="front">
-                    <img src="./img/livre/tome5.jpg"width="136" height="150" alt="Illustration du livre NDS">
-                    <cite>De Jean Louis Prat</cite>
+              <h3 class="livre__title" role="heading" aria-level="3">NICOLAS DE STA&Euml;L</h3>
+              <div class="livre__flipcontainer">
+                <div class="livre__flipper">
+                  <div class="livre__front">
+                    <img class="livre__image" src="./img/livre/tome5.jpg"width="136" height="150" alt="Illustration du livre NDS">
+                    <cite class="livre__front--cite">De Jean Louis Prat</cite>
                   </div>
-                  <div class="back">
-                    <ul>
-                      <li>Edition&nbsp;:&nbsp;Fondation Pierre Gianada</li>
-                      <li>Type de livre&nbsp;:&nbsp;Catalogue</li>
-                      <li>232 pages</li>
-                      <li>Format 22 x 24</li>
-                      <li>Illustration présente</li>
-                      <li>Relié avec couverture illustrée</li>
+                  <div class="livre__back">
+                    <ul class="back__menu">
+                      <li class="back__menu--element">Edition&nbsp;:&nbsp;Fondation Pierre Gianada</li>
+                      <li class="back__menu--element">Type de livre&nbsp;:&nbsp;Catalogue</li>
+                      <li class="back__menu--element">232 pages</li>
+                      <li class="back__menu--element">Format 22 x 24</li>
+                      <li class="back__menu--element">Illustration présente</li>
+                      <li class="back__menu--element">Relié avec couverture illustrée</li>
                     </ul>
                   </div>
-                </div><!--flipper-->
-              </div><!--flipcontainer-->
+                </div><!--livre__flipper-->
+              </div><!--livre__flipcontainer-->
             </div>
           </div>
         </section>
@@ -167,10 +173,10 @@ COMMENCER LE 19 NOVEMBRE 2015
       <footer>
         <section class="piedpage">
           <h3  aria-level="3">Info complémentaire</h3>
-          <ul>
-            <li>Dylan Schirino© </li>
-            <li><a href="mailto:dylan.schirino@hotmail.fr">Contacter le Webmaster</a></li>
-            <li> 2015 - 2016 </li>
+          <ul class="piedpage__list">
+            <li class="piedpage__element">Dylan Schirino© </li>
+            <li class="piedpage__element"><a href="mailto:dylan.schirino@hotmail.fr"class="piedpage__element--link">Contacter le Webmaster</a></li>
+            <li class="piedpage__element"> 2015 - 2016 </li>
           </ul>
         </section>
       </footer>

@@ -1,38 +1,43 @@
 /* ARTISTE
- *
- * /sass/components/mainimage.scss - Design of mainimage stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/components/mainimage.scss - Design of mainimage stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 
- .principal{
+.principal{
   background: url("../img/tableaux-acceuil.jpg") no-repeat center fixed;
   background-size: cover;
-}
-.infoExpo{
-  color:white;
-  border:1px solid white;
-  padding:1em;
-  background-color: rgba(0,0,0,0.7);
+  &__infoExpo{
+    color:white;
+    border:1px solid white;
+    padding:1em;
+    background-color: rgba(0,0,0,0.7);
+  }
 }
 
-.infoExpo p{
-  display: inline-block;
-  font-weight: lighter;
-  font-size:1.6em;
-  line-height: 1.5em;
-  letter-spacing: 1.5px;
-  padding:0.3em;
-}
-.infoExpo a{
-  background-color: #12A3D7;
-  border-radius: 5px;
-  padding: 0.5em;
-  color:black;
-  transition: .3s ease;
-}
-.infoExpo a:hover{
-  color: white;
-  background-color: #0063B3;
+.infoExpo{
+  
+  &__text{
+    display: inline-block;
+    font-weight: lighter;
+    font-size:1.6em;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    padding:0.3em;
+
+    &--link{
+      background-color: #12A3D7;
+      border-radius: 5px;
+      padding: 0.5em;
+      color:black;
+      transition: .3s ease;
+
+      &:hover{
+        color:white;
+        background-color: #0063B3;
+      }
+    }
+  }
 }
