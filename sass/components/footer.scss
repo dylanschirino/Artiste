@@ -7,14 +7,14 @@
 */
 
 .piedpage{
-  background-color: #e04f43;
-  color:white;
+  background-color: $footerBckg;
+  color:$white;
   &__element{
     display: inline-block;
     font-size: 1.3em;
     padding:1em;
     &--link{
-      color:white;
+      color:$white;
       &:hover{
         text-decoration: underline;
       }

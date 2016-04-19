@@ -6,7 +6,7 @@
  * started at 03/04/2016
  */
  .ensembleimage div{
-   color:white;
+   color:$white;
  }
  .infocomplementaire{
    &__strong{
@@ -14,9 +14,9 @@
      line-height: 1.4em;
    }
    &__element{
-     font:1.3em/1.4 "ubuntu";
-     padding:1.3em;
-     color:white;
+     font:1.3em/1.5 $ubuntuStack;
+     padding:1.4em;
+     color:$white;
      background-color: rgba(0,0,0,0.5);
      text-align: center;
    }

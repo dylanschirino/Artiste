@@ -6,42 +6,43 @@
 * started at 03/04/2016
 */
 .catalogue{
-  margin-bottom: 7em;
-  perspective: 1000;
+  margin-bottom:2em;
   &__title{
-    margin-top: 1em;
+    margin: 1em 0;
   }
 }
-
+.toutcatalogue{
+  text-align: center;
+}
 .livre{
+  width:50em;
+  height: 48em;
+  display: inline-block;
+  margin:auto;
+  margin-left: 4em;
   margin-bottom: 5em;
   &__title{
     margin-top: 1em;
   }
-  &__image{
-    width:20em;
-    min-height: 30em;
+  &__cite{
+    margin-top: 1em;
+    display: block;
   }
-  &__front{
-    &--cite{
-      display: block;
+  &__image{
+    display: block;
+    margin: auto;
+    height:30em;
+    width: 20em;
+  }
+}
+@media screen and (max-width:579px) {
+  .catalogue{
+    &__title{
+      font-size: 4em;
     }
   }
-  &__flipcontainer{
-    width:22em;
-    margin: auto;
-  }
-  &__flipper{
-    transition: 1s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  &__back{
-      backface-visibility: hidden;
-      width: 25em;
-      position: absolute;
-      top:0;
-      left:0;
-      margin:auto;
-  }
+    .livre{
+      max-width: 100%;
+      margin:2em 0;
+    }
 }

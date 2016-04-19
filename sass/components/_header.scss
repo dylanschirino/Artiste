@@ -6,30 +6,30 @@
 * started at 03/04/2016
 */
 .menu{
-  background-color: #323A45;
+  background-color:$menuBckg;
   &__element{
     &--active{
-      border-bottom: 4px solid #F08362;
+      border-bottom: 4px solid $hoverColor;
     }
     &:hover{
-      color:white;
-      border-bottom:2px solid white;
+      color:$white;
+      border-bottom:2px solid $white;
       cursor: pointer;
     }
   }
   &__link{
     display: block;
-    font: 1.5em "ubuntu";
+    font: 1.5em $ubuntuStack;
     transition: .4s ease-in-out;
     padding:0.666em;
-    color:white;
+    color:$white;
     &--active{
-      color:#F08362;
+      color:$hoverColor;
     }
   }
 }
 .topbar{
-  background-color: #323A45;
+  background-color: $menuBckg;
   &__shower{
     display: none;
   }
@@ -62,7 +62,7 @@
       }
     }
     &__header{
-      background-color: #323A45;
+      background-color: $menuBckg;
       min-height:72px;
     }
   }
@@ -88,7 +88,7 @@
         border:none;
       }
       &:hover{
-        background-color: #52647C;
+        background-color: $menuHover;
       }
     }
     &__link{
@@ -96,9 +96,9 @@
       margin:0;
       padding:2em;
       font-size: 1.4em;
-      border-top: 1px solid white;
+      border-top: 1px solid $white;
       &--active{
-        color:white;
+        color:$white;
       }
     }
   }

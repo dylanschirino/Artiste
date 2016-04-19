@@ -8,20 +8,20 @@
 
 .liens{
   &__link{
-    font: 2em/2em "opensans";
+    font: 2em/2em $opensansStack;
     padding: 2em;
     text-align: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $grey;
     transition:.3s ease-in-out;
 
     &:hover, &:focus{
       cursor: pointer;
-      background-color: #43566D;
-      color: white;
+      background-color: $linkHover;
+      color: $white;
       &::before{
         content:"";
         display: block;
-        font:2em/2em "fontawesome";
+        font:2em/2em $fontawesomeStack;
       }
     }
   }

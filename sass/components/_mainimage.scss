@@ -10,8 +10,8 @@
   background: url("../img/tableaux-acceuil.jpg") no-repeat center;
   background-size: cover;
   &__infoExpo{
-    color:white;
-    border:1px solid white;
+    color:$white;
+    border:1px solid $white;
     padding:1em;
     background-color: rgba(0,0,0,0.7);
   }
@@ -28,15 +28,15 @@
     padding:0.3em;
 
     &--link{
-      background-color: #12A3D7;
+      background-color: $blueBckg;
       border-radius: 5px;
       padding: 0.5em;
-      color:black;
+      color:$black;
       transition: .3s ease;
 
       &:hover{
-        color:white;
-        background-color: #0063B3;
+        color:$white;
+        background-color: $linkHover;
       }
     }
   }

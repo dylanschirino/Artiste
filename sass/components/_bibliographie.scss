@@ -7,40 +7,42 @@
 */
 
 .livre{
-  &__image{
-    border:10px solid white;
-    box-shadow: 1px 1px 5px black;
+  vertical-align: bottom;
+      overflow: hidden;
+  &__container{
+    border:1px solid $grey;
+    padding: 1em;
   }
-  &__front{
-    backface-visibility: hidden;
-    z-index: 2;
-    transform: rotateY(0deg);
-    &--cite{
+  &:hover &__menu,&:focus &__menu{
+    transform: translateY(-400px);
+    cursor: pointer;
+  }
+  &__image{
+    border:10px solid $white;
+    box-shadow: 1px 1px 5px $black;
+  }
+  &__title{
+    font-size: 1.6em;
+  }
+    &__cite{
+      display: block;
       font-size: 1.6em;
+      background-color: $blueBckg;
       padding:1em;
-      background-color:rgba(0,0,0,0.6);
-      color:white;
+      color:$white;
       text-align: center;
       text-decoration: none;
     }
-  }
-  &__flipcontainer{
-    &:hover .livre__flipper{
-      transform: rotateY(180deg);
-    }
-  }
-  &__back{
-    transform: rotateY(180deg);
-    border:1px solid black;
-  }
-}
-.back{
   &__menu{
+    transform: translateY(50px);
+    background-color: $backgroundCard;
+    opacity: 0.9;
+      transition: 1s ease-in-out;
     &--element{
-      font:1.5em/1.4 "ubuntu";
-      padding:0.7em;
-      text-align:left;
-      color:black;;
+      font:1.5em/1.4 "opensans";
+      padding:1em;
+      text-align:center;
+      color:$black;
     }
   }
 }

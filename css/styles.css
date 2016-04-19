@@ -236,9 +236,10 @@ h3 {
     min-width: 100%;
     height: auto; }
   .biographie__text {
-    max-width: 100%;
-    font-size: 1.2em;
+    width: 90%;
+    font-size: 1.4em;
     margin: 0;
+    margin-left: 1.5em;
     margin-bottom: 2em;
     float: none; } }
 
@@ -277,7 +278,8 @@ h3 {
   transition: 1s ease-in-out; }
 
 .ensembleimage li:hover .infocomplementaire li {
-  transform: translateY(-300px); }
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px); }
 
 @media screen and (max-width: 665px) {
   .ensembleimage__container, .ensembleimage__image {
@@ -301,34 +303,37 @@ h3 {
 * started at 03/04/2016
 */
 .catalogue {
-  margin-bottom: 7em;
-  perspective: 1000; }
+  margin-bottom: 2em; }
   .catalogue__title {
-    margin-top: 1em; }
+    margin: 1em 0; }
+
+.toutcatalogue {
+  text-align: center; }
 
 .livre {
+  width: 50em;
+  height: 48em;
+  display: inline-block;
+  margin: auto;
+  margin-left: 4em;
   margin-bottom: 5em; }
   .livre__title {
     margin-top: 1em; }
-  .livre__image {
-    width: 20em;
-    min-height: 30em; }
-  .livre__front--cite {
+  .livre__cite {
+    margin-top: 1em;
     display: block; }
-  .livre__flipcontainer {
-    width: 22em;
-    margin: auto; }
-  .livre__flipper {
-    transition: 1s;
-    transform-style: preserve-3d;
-    position: relative; }
-  .livre__back {
-    backface-visibility: hidden;
-    width: 25em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto; }
+  .livre__image {
+    display: block;
+    margin: auto;
+    height: 30em;
+    width: 20em; }
+
+@media screen and (max-width: 579px) {
+  .catalogue__title {
+    font-size: 4em; }
+  .livre {
+    max-width: 100%;
+    margin: 2em 0; } }
 
 /* ARTISTE
  *
@@ -337,12 +342,19 @@ h3 {
  * coded by Dylan Schirino
  * started at 03/04/2016
  */
+.liens__title {
+  margin: 1em 0; }
+
 .liens__menu {
   padding-bottom: 4em; }
 
 .liens__link {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column; }
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /* ARTISTE
  *
@@ -374,7 +386,7 @@ h3 {
     cursor: pointer; }
   .menu__link {
     display: block;
-    font: 1.5em "ubuntu";
+    font: 1.5em "ubuntu", Arial;
     transition: .4s ease-in-out;
     padding: 0.666em;
     color: white; }
@@ -443,7 +455,7 @@ h3 {
   border-right: 1px solid #ccc; }
 
 .info__element {
-  font: 1.6em/1.8 "opensans";
+  font: 1.6em/1.8 "opensans", Arial, sans-serif;
   padding: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -486,7 +498,7 @@ h3 {
 
 .form__label {
   display: block;
-  font: 1.6em/1.8 "opensans";
+  font: 1.6em/1.8 "opensans", Arial, sans-serif;
   margin-top: 1em; }
 
 .form__button {
@@ -512,34 +524,40 @@ h3 {
 * coded by Dylan Schirino
 * started at 03/04/2016
 */
-.livre__image {
-  border: 10px solid white;
-  box-shadow: 1px 1px 5px black; }
-
-.livre__front {
-  backface-visibility: hidden;
-  z-index: 2;
-  transform: rotateY(0deg); }
-  .livre__front--cite {
+.livre {
+  vertical-align: bottom;
+  overflow: hidden; }
+  .livre__container {
+    border: 1px solid #ccc;
+    padding: 1em; }
+  .livre:hover .livre__menu, .livre:focus .livre__menu {
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px);
+    cursor: pointer; }
+  .livre__image {
+    border: 10px solid white;
+    box-shadow: 1px 1px 5px black; }
+  .livre__title {
+    font-size: 1.6em; }
+  .livre__cite {
+    display: block;
     font-size: 1.6em;
+    background-color: #12A3D7;
     padding: 1em;
-    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     text-decoration: none; }
-
-.livre__flipcontainer:hover .livre__flipper {
-  transform: rotateY(180deg); }
-
-.livre__back {
-  transform: rotateY(180deg);
-  border: 1px solid black; }
-
-.back__menu--element {
-  font: 1.5em/1.4 "ubuntu";
-  padding: 0.7em;
-  text-align: left;
-  color: black; }
+  .livre__menu {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    background-color: #EFEFEF;
+    opacity: 0.9;
+    transition: 1s ease-in-out; }
+    .livre__menu--element {
+      font: 1.5em/1.4 "opensans";
+      padding: 1em;
+      text-align: center;
+      color: black; }
 
 /* ARTISTE
  *
@@ -549,7 +567,7 @@ h3 {
  * started at 03/04/2016
  */
 .biographie__text {
-  font: 1.5em/1.6em "opensans";
+  font: 1.5em/1.6em "opensans", Arial, sans-serif;
   color: black;
   padding: 1em; }
 
@@ -572,8 +590,8 @@ h3 {
   line-height: 1.4em; }
 
 .infocomplementaire__element {
-  font: 1.3em/1.4 "ubuntu";
-  padding: 1.3em;
+  font: 1.3em/1.5 "ubuntu", Arial;
+  padding: 1.4em;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center; }
@@ -609,7 +627,7 @@ h3 {
     transition: .3s ease; }
     .infoExpo__text--link:hover {
       color: white;
-      background-color: #0063B3; }
+      background-color: #43566D; }
 
 @media screen and (max-width: 610px) {
   .principal__infoExpo {
@@ -632,7 +650,7 @@ h3 {
 * started at 03/04/2016
 */
 .liens__link {
-  font: 2em/2em "opensans";
+  font: 2em/2em "opensans", Arial, sans-serif;
   padding: 2em;
   text-align: center;
   border-bottom: 1px solid #ccc;
@@ -664,5 +682,4 @@ h3 {
       color: white; }
       .piedpage__element--link:hover {
         text-decoration: underline; }
-
 /*# sourceMappingURL=styles.css.map */

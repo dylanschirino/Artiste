@@ -8,8 +8,8 @@
 
 .biographie{
   &__text{
-    font:1.5em/1.6em "opensans";
-    color:black;
+    font:1.5em/1.6em $opensansStack;
+    color:$black;
     padding: 1em;
   }
 }
