@@ -182,6 +182,24 @@ h3 {
   display: block;
   margin-right: 2em; }
 
+@media screen and (max-width: 920px) {
+  .main {
+    width: 40em;
+    margin: auto; }
+  .form {
+    display: block; } }
+
+@media screen and (max-width: 426px) {
+  .main {
+    width: 100%;
+    margin: 0; }
+  .info__element {
+    margin: 0; }
+  .form {
+    width: 90%;
+    margin: 0;
+    margin-left: 1em; } }
+
 /* ARTISTE
  *
  * /sass/object/biographie.scss - Non Design of biographie stylesheet
@@ -482,6 +500,10 @@ h3 {
     transition: .3s linear;
     cursor: pointer;
     background-color: #12A3D7; }
+
+@media screen and (max-width: 426px) {
+  .info__menu {
+    border-right: 0; } }
 
 /* ARTISTE
 *

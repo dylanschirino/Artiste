@@ -80,3 +80,11 @@
     }
   }
 }
+
+@media screen and (max-width:426px) {
+  .info{
+    &__menu{
+      border-right:0;
+    }
+  }
+}
