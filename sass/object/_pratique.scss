@@ -34,7 +34,6 @@
     margin-bottom: 4em;
   }
   &__element{
-    display: block;
     margin-right: 2em;
   }
 }
@@ -42,9 +41,6 @@
   .main{
     width:40em;
     margin: auto;
-  }
-  .form{
-    display: block;
   }
 }
 @media screen and (max-width:426px) {
@@ -58,8 +54,15 @@
     }
   }
   .form{
-    width: 90%;
+    width:90%;
     margin:0;
     margin-left:1em;
+  }
+}
+@media screen and (max-width:350px) {
+  .form{
+    &__input{
+      width:90%;
+    }
   }
 }
