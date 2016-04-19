@@ -8,11 +8,20 @@
  .principal{
    min-height: 88vh;
    position: relative;
-   
+
    &__infoExpo{
      width:35em;
      position: absolute;
      right:3em;
      bottom: 5em;
+   }
+ }
+ @media screen and (max-width:610px) {
+   .principal{
+     &__infoExpo{
+      position:static;
+      top:0;
+      width: 100%;
+     }
    }
  }

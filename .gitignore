@@ -1,2 +1,6 @@
 node_modules
 node_modules/uglify-to-browserify/.travis.yml
+
+assets/responsive.js
+
+assets/responsive.js

@@ -1,10 +1,10 @@
 /* ARTISTE
- *
- * /sass/components/lien.scss - Non Design of lien stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/components/lien.scss - Non Design of lien stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 
 .liens{
   &__link{
@@ -14,15 +14,15 @@
     border-bottom: 1px solid #ccc;
     transition:.3s ease-in-out;
 
-    &:hover{
-        cursor: pointer;
-        background-color: #43566D;
-        color: white;
-        &::before{
-          content:"";
-          display: block;
-          font:2em/2em "fontawesome";
-        }
+    &:hover, &:focus{
+      cursor: pointer;
+      background-color: #43566D;
+      color: white;
+      &::before{
+        content:"";
+        display: block;
+        font:2em/2em "fontawesome";
+      }
     }
   }
 }

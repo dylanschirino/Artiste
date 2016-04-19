@@ -13,3 +13,11 @@
     padding: 1em;
   }
 }
+@media screen and (max-width:600px){
+
+  .biographie{
+    &__text{
+        padding:0;
+    }
+  }
+}

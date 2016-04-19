@@ -7,7 +7,7 @@
 */
 
 .principal{
-  background: url("../img/tableaux-acceuil.jpg") no-repeat center fixed;
+  background: url("../img/tableaux-acceuil.jpg") no-repeat center;
   background-size: cover;
   &__infoExpo{
     color:white;
@@ -18,7 +18,7 @@
 }
 
 .infoExpo{
-  
+
   &__text{
     display: inline-block;
     font-weight: lighter;
@@ -41,3 +41,23 @@
     }
   }
 }
+ @media screen and (max-width:610px) {
+   .principal{
+     &__infoExpo{
+       padding:0;
+       border:0;
+     }
+   }
+ }
+ @media screen and (max-width:400px){
+   .principal{
+     height:100%;
+    width:100%;
+   }
+   .infoExpo{
+     &__text{
+       font-weight: normal;
+       padding-bottom: 1em;
+     }
+   }
+ }

@@ -9,16 +9,14 @@
 .topbar{
   text-align:right;
   &__logo{
-      font-size:0;
-      display: block;
+    &--image{
       width:200px;
-      height:80px;
-      background:url("../img/logo.png") no-repeat center center;
-      background-size: contain;
       position: absolute;
       left:50px;
+      padding-top:3em;
       z-index: 1;
-  }
+    }
+}
 }
 
 

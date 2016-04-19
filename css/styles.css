@@ -109,15 +109,11 @@ h3 {
  */
 .topbar {
   text-align: right; }
-  .topbar__logo {
-    font-size: 0;
-    display: block;
+  .topbar__logo--image {
     width: 200px;
-    height: 80px;
-    background: url("../img/logo.png") no-repeat center center;
-    background-size: contain;
     position: absolute;
     left: 50px;
+    padding-top: 3em;
     z-index: 1; }
 
 .menu {
@@ -143,6 +139,12 @@ h3 {
     position: absolute;
     right: 3em;
     bottom: 5em; }
+
+@media screen and (max-width: 610px) {
+  .principal__infoExpo {
+    position: static;
+    top: 0;
+    width: 100%; } }
 
 /* ARTISTE
 *
@@ -205,28 +207,42 @@ h3 {
     margin-top: 1em;
     margin-bottom: 1em; }
 
+@media screen and (max-width: 878px) {
+  .biographie {
+    width: 100%;
+    margin: 0; } }
+
+@media screen and (max-width: 600px) {
+  .biographie__image {
+    margin: 3em 0;
+    min-width: 100%;
+    height: auto; }
+  .biographie__text {
+    max-width: 100%;
+    font-size: 1.2em;
+    margin: 0;
+    margin-bottom: 2em;
+    float: none; } }
+
 /* ARTISTE
- *
- * /sass/object/galerie.scss - Non Design of galerie stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/object/galerie.scss - Non Design of galerie stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 .galerieimage {
   display: block;
   width: 65em;
   margin: auto; }
+  .galerieimage::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .galerieimage__title {
+    margin: 1em 0; }
 
-.galerieimage::after {
-  content: "";
-  display: block;
-  clear: both; }
-
-.galerieimage h2 {
-  margin: 1em 0; }
-
-.ensembleimage div {
-  color: white;
+.ensembleimage__container {
   float: left;
   width: 32em;
   margin: auto;
@@ -234,25 +250,30 @@ h3 {
   overflow: hidden;
   margin-bottom: 2em; }
 
-.ensembleimage img {
+.ensembleimage__image {
   width: 30em;
   height: 30em; }
 
-.infocomplementaire strong {
-  font-size: 1.4em;
-  line-height: 1.4em; }
-
-.infocomplementaire li {
-  font: 1.3em/1.4 "ubuntu";
-  padding: 1.3em;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+.infocomplementaire__element {
   width: 265px;
-  text-align: center;
   transition: 1s ease-in-out; }
 
 .ensembleimage li:hover .infocomplementaire li {
   transform: translateY(-300px); }
+
+@media screen and (max-width: 665px) {
+  .ensembleimage__container, .ensembleimage__image {
+    max-width: 100%;
+    height: 30em;
+    float: none;
+    display: block; } }
+
+@media screen and (max-width: 558px) {
+  .galerieimage {
+    width: 100%;
+    margin: 0; }
+  .ensembleimage {
+    margin-left: 1em; } }
 
 /* ARTISTE
 *
@@ -350,9 +371,8 @@ h3 {
 @media screen and (max-width: 878px) {
   .menu__link {
     font-size: 1.2em; }
-  .topbar__logo {
+  .topbar__logo--image {
     width: 150px;
-    height: 60px;
     position: absolute;
     left: 10px; } }
 
@@ -511,6 +531,10 @@ h3 {
   color: black;
   padding: 1em; }
 
+@media screen and (max-width: 600px) {
+  .biographie__text {
+    padding: 0; } }
+
 /* ARTISTE
  *
  * /sass/components/galerie.scss - Design of galerie stylesheet
@@ -518,6 +542,20 @@ h3 {
  * coded by Dylan Schirino
  * started at 03/04/2016
  */
+.ensembleimage div {
+  color: white; }
+
+.infocomplementaire__strong {
+  font-size: 1.4em;
+  line-height: 1.4em; }
+
+.infocomplementaire__element {
+  font: 1.3em/1.4 "ubuntu";
+  padding: 1.3em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center; }
+
 /* ARTISTE
 *
 * /sass/components/mainimage.scss - Design of mainimage stylesheet
@@ -526,7 +564,7 @@ h3 {
 * started at 03/04/2016
 */
 .principal {
-  background: url("../img/tableaux-acceuil.jpg") no-repeat center fixed;
+  background: url("../img/tableaux-acceuil.jpg") no-repeat center;
   background-size: cover; }
   .principal__infoExpo {
     color: white;
@@ -551,24 +589,37 @@ h3 {
       color: white;
       background-color: #0063B3; }
 
+@media screen and (max-width: 610px) {
+  .principal__infoExpo {
+    padding: 0;
+    border: 0; } }
+
+@media screen and (max-width: 400px) {
+  .principal {
+    height: 100%;
+    width: 100%; }
+  .infoExpo__text {
+    font-weight: normal;
+    padding-bottom: 1em; } }
+
 /* ARTISTE
- *
- * /sass/components/lien.scss - Non Design of lien stylesheet
- *
- * coded by Dylan Schirino
- * started at 03/04/2016
- */
+*
+* /sass/components/lien.scss - Non Design of lien stylesheet
+*
+* coded by Dylan Schirino
+* started at 03/04/2016
+*/
 .liens__link {
   font: 2em/2em "opensans";
   padding: 2em;
   text-align: center;
   border-bottom: 1px solid #ccc;
   transition: .3s ease-in-out; }
-  .liens__link:hover {
+  .liens__link:hover, .liens__link:focus {
     cursor: pointer;
     background-color: #43566D;
     color: white; }
-    .liens__link:hover::before {
+    .liens__link:hover::before, .liens__link:focus::before {
       content: "";
       display: block;
       font: 2em/2em "fontawesome"; }
